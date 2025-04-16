@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSM - Store</title>
     <link rel="manifest" href="/store/manifest.json">
-    <link rel="icon" href="icons/1.jpeg">
+    <link rel="icon" href="icons/10.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Estilo geral */
@@ -52,6 +52,7 @@
             padding: 10px;
             animation: slideUp 0.3s ease-out;
             margin-bottom: 12;
+            border-radius: 12px;
         }
 
         .tab {
@@ -61,6 +62,7 @@
             position: relative;
             padding: 10px;
             transition: color 0.3s ease;
+            border-radius: 12px;
         }
 
         .tab:hover {
@@ -70,6 +72,7 @@
         .tab.active {
             font-weight: bold;
             border-bottom: 2px solid #1abc9c;
+            border-radius: 12px;
         }
 
         /* Animação de slide da barra de navegação */
@@ -93,10 +96,12 @@
             height: 3px;
             background-color: #1abc9c;
             transition: width 0.3s ease-in-out;
+            border-radius: 12px;
         }
 
         .tab.active::after {
             width: 100%;
+            border-radius: 12px;
         }
 
         /* Estilo do botão */
@@ -239,6 +244,59 @@
             font-size: 0.9rem;
             color: #555;
         }
+        .settings {
+   padding: 20px;
+  }
+
+  h1 {
+   margin-bottom: 20px;
+  }
+
+  h2 {
+   margin-top: 20px;
+   margin-bottom: 10px;
+  }
+
+  div {
+   margin-bottom: 15px;
+  }
+
+  label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+  }
+
+  input[type="checkbox"],
+  select,
+  input[type="password"] {
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: 100%;
+   box-sizing: border-box;
+  }
+
+  button {
+   padding: 10px 15px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   margin-top: 10px;
+  }
+
+  button:hover {
+   background-color: #0056b3;
+  }
+
+  #senhaControlesParentais {
+   margin-top: 10px;
+   padding-left: 20px;
+   border-left: 2px solid #ca2b2b;
+  }
     </style>
 </head>
 
@@ -246,12 +304,13 @@
     <div class="container">
         <!-- Conteúdo -->
         <div id="home-screen" class="content home active">
-            <h1>Página Home</h1>
-            <p>Bem-vindo à página inicial!</p>
+            <h1>Tela Home</h1>
+            <p style="margin-left: 104px;">Bem-vindo à CSMStore!</p>
+            <h4>Baixe nosso Apps... E compartilhe para que mais pessoas possa conhecê-los.</h4>
             <div id="P1" class="containera1" style="display:block">
                 <div style='color:black'>
                     <h4>
-                        <img src="icons/6.jpeg" style="width: 50px; height: 40px;" alt="AMindBuild">
+                        <img src="icons/6.jpeg" style="width: 60px; height: 50px;" alt="AMindBuild">
                         <b>AMindBuild</b>
                     </h4>
                     <p>Categoria:<a>Gestão da Emoção</a></p>
@@ -263,7 +322,7 @@
             <div id="P2" class="containera1" style="display:block">
                 <div style='color:black'>
                     <h4>
-                        <img src="https://cresoftmob.github.io/img/1.png" style="width: 50px; height: 40px;"
+                        <img src="https://cresoftmob.github.io/img/1.png" style="width: 60px; height: 50px;"
                             alt="SignSeek">
                         <b>SameNext</b>
                     </h4>
@@ -276,9 +335,9 @@
             <div id="P3" class="containera1" style="display:block">
                 <div style='color:black'>
                     <h4>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktZZElm8Fdh85Cc8vdHv_jw6R9_UG_9FJJw&s"
-                            style="width: 50px; height: 40px;" alt="CriptArquivo">
-                        <b>TargetDesign</b>
+                        <img src="/icons/targetD.jpeg"
+                            style="width: 60px; height: 50px;" alt="CriptArquivo">
+                        <b>TargetDesigner</b>
                     </h4>
                     <p>Categoria:<a>Ferramenta de desenho</a></p>
                     <div style='color: #0a1d37;'>
@@ -291,12 +350,12 @@
                 <div style='color:black'>
                     <button id="closeBtn2" style="border-radius: 12px; background-color: #0a1d37;color:#16a085;"> <i
                             class="fas fa-sign-out-alt"></i>sair</button>
-                    <h3>Seja bem-vindo ao site do AMindBuild</h3>
+                   
                     <h4>
-                        <img src="icons/6.jpeg" style="width: 50px; height: 40px;" alt="AMindBuild">
+                        <img src="icons/6.jpeg" style="width: 60px; height: 50px;" alt="AMindBuild">
                         <b>AMindBuild</b>
                     </h4>
-                    <p><a></a>Gestão da Emoção</p>
+                    <p  style="font-weight: bold;"><a>Gestão da Emoção</a></p>
                     <a href="" class="button-link" id="download-button1" download="AMindBuild.apk">
                         <button class="button">Baixar APK</button>
                     </a>
@@ -304,9 +363,9 @@
                         <strong>Downloads realizados: <span id="download-count1">Carregando...</span></strong>
                     </div>
                     <div class="container-images">
-                        <img src="https://assets.justinmind.com/wp-content/uploads/2018/02/fitness-apps-splash-screens.png"
+                        <img src="icons/9.jpeg"
                             alt="Imagem de AMindBuild" />
-                        <img src="https://assets.justinmind.com/wp-content/uploads/2018/02/fitness-apps-splash-screens.png"
+                        <img src="icons/9.jpeg"
                             alt="Imagem de AMindBuild" />
                     </div>
                     <div style='color: #0a1d37;'>
@@ -318,11 +377,11 @@
                 <div style="color:black">
                     <button id="closeBtn1" style="border-radius: 12px; background-color: #0a1d37;color:#16a085;"> <i
                             class="fas fa-sign-out-alt"></i>sair</button>
-                    <h3>Seja bem-vindo ao site do SignSeek</h3>
+                   
                     <h3> <img src="https://cresoftmob.github.io/img/1.png"
-                            style="width: 50px;height: 40px; border-radius: 20px; padding-right: 12px; padding-left: 10px"
+                            style="width: 60px;height: 50px; border-radius: 40px; padding-right: 12px; padding-left: 10px"
                             alt="SameNext"><b>SameNext</b></h3>
-                    <p><a></a>Rede Social</p>
+                    <p style="font-weight: bold;"><a>Rede Social</a></p>
                     <a href="https://cresoftmob.github.io/apk--Last/SameNext_1.0.0.apk" class="button-link"
                         id="download-button2" download="SameNext.apk">
                         <button class="button">Baixar APK</button>
@@ -340,35 +399,69 @@
                 <div style='color:black'>
                     <button id="closeBtn" style="border-radius: 12px; background-color: #0a1d37;color:#16a085;"> <i
                             class="fas fa-sign-out-alt"></i>sair</button>
-                    <h3>Seja bem-vindo ao site do TargetDesign</h3>
-                    <h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktZZElm8Fdh85Cc8vdHv_jw6R9_UG_9FJJw&s"
+                  
+                    <h3><img src="/icons/targetD.jpeg"
                             alt="CriptArquivo"
-                            style="width: 50px;height: 40px; border-radius: 20px; padding-right: 12px; padding-left: 10px;"><b>CriptArquivo</b>
+                            style="width: 60px;height: 50px; border-radius: 40px; padding-right: 12px; padding-left: 10px;"><b>TargetDesigner</b>
                     </h3>
-                    <p><a>Ferramenta de desenho</a></p>
-                    <a href="https://afonsobilionare.github.io/APK1.0./TargetDesign_1.0.apk" class="button-link"
-                        id="download-button3" download="TargetDesign.apk">
-                        <button class="button">Baixar APK</button>
+                    <p style="font-weight: bold;"><a>Ferramenta de desenho</a></p>
+                    <a href="https://cresoftmob.github.io/app/HomeDesign.html" class="button-link"
+                        id="download-button3" download="TargetDesign.pwa">
+                        <button class="button">Instalar PWA</button>
                     </a>
 
                     <div class="downloads-count3">
                         <strong>Downloads realizados: <span id="download-count3">Carregando...</span></strong>
                     </div>
-                    <img src="https://assets.justinmind.com/wp-content/uploads/2018/02/fitness-apps-splash-screens.png"
+                    <div style="margin-top: 15px; border-radius: 8px; padding: 15px; background-color: #f4f4f4; color: #333;">
+                        <h3 style="color: #2ecc71; margin-bottom: 10px;"><i class="fas fa-mobile-alt" style="margin-right: 8px;"></i> Instale o TargetDesign no seu dispositivo:</h3>
+                    
+                        <div style="margin-bottom: 12px; border-left: 3px solid #3498db; padding-left: 10px;">
+                            <h4 style="color: #3498db; margin-bottom: 5px;"><i class="fab fa-android" style="margin-right: 5px;"></i> Android</h4>
+                            <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.95em;">
+                            <li><span style="font-weight: bold;">Click em Instalar PWA:</span> Acesse o TargetDesign com o navegador "Chrome".</li>
+                                <li><span style="font-weight: bold;">Ícone de Instalar:</span> Procure pelo ícone de instalação ( <i class="fas fa-plus-square"></i> ou <i class="fas fa-download"></i> com um "+") na barra de endereço ou no menu ( <i class="fas fa-ellipsis-v"></i> ).</li>
+                                <li><span style="font-weight: bold;">Adicionar à Tela:</span> Toque em "Instalar" e siga as instruções para ter o TargetDesign na sua tela inicial!</li>
+                            </ul>
+                        </div>
+                    
+                        <div style="margin-bottom: 12px; border-left: 3px solid #e74c3c; padding-left: 10px;">
+                            <h4 style="color: #e74c3c; margin-bottom: 5px;"><i class="fab fa-apple" style="margin-right: 5px;"></i> iOS</h4>
+                            <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.95em;">
+                                <li><span style="font-weight: bold;">Click em Instalar PWA:</span>No navegador "Safari" para acessar o TargetDesign.</li>
+                                <li><span style="font-weight: bold;">Compartilhar:</span> Toque no ícone de compartilhamento ( <i class="fas fa-share-square"></i> ) na parte inferior da tela.</li>
+                                <li><span style="font-weight: bold;">Tela de Início:</span> Role e selecione "Adicionar à Tela de Início".</li>
+                                <li><span style="font-weight: bold;">Adicionar:</span> Edite o nome TargetDesigner se não tiver e toque em "Adicionar" no canto superior direito. Pronto, o TargetDesign estará na sua tela inicial!</li>
+                            </ul>
+                        </div>
+                    
+                        <p style="margin-top: 15px; font-size: 0.9em; color: #777;">
+                            <i class="fas fa-lightbulb" style="margin-right: 5px; color: #f39c12;"></i>
+                            <span style="font-weight: bold; color: #f39c12;">Dica Extra:</span> Se encontrar dificuldades como não acessar a camera, experimente o
+                            <a href="https://www.microsoft.com/pt-br/edge" target="_blank" style="color: #3498db; text-decoration: none;">Microsoft Edge</a>. Ele oferece excelente suporte para PWA em diversas plataformas.
+                        </p>
+                    </div>
+                    <img src="/icons/100.jpeg"
                         alt="Imagem de CriptArquivo" />
-                    <img src="https://assets.justinmind.com/wp-content/uploads/2018/02/fitness-apps-splash-screens.png"
+                    <img src="/icons/111.jpeg"
                         alt="Imagem de CriptArquivo" />
                     <div style='color : #0a1d37;'>Desenvolvido pela:<b>CreSoftMob</b></div>
                 </div>
             </div>
         </div>
 
-        <div id="settings-screen" class="content settings">
-            <h1>Página de Configurações</h1>
-            <p>Aqui você pode ajustar as configurações do seu dispositivo.</p>
-            <p id="showname">email:<a></a></p>
-            <button id="logoutBtn">Sair</button>
-        </div>
+      <div id="settings-screen" class="content settings">
+  <h1>Tela de Configurações</h1>
+  <p>CSM-Store</p>
+
+  <h2>Conta</h2>
+  <p id="showname">Email: <span id="user-email"></span></p>
+  <button id="logoutBtn">Sair da Conta</button>
+
+  <h2>Sobre</h2>
+  <p id="desenvolvidoPor">Desenvolvido pela CreSoftMob</p>
+</div>
+
 
         <!-- Bottom Tabs -->
         <div class="bottom-tabs">
@@ -397,6 +490,7 @@
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
         const auth = getAuth(app);
+        
 
         // Verificar se o usuário está autenticado
         onAuthStateChanged(auth, (user) => {
@@ -533,7 +627,7 @@
         document.getElementById('download-button3').addEventListener('click', async function (e) {
             e.preventDefault();
 
-            const userConfirmed = confirm('Este APK é compatível apenas com dispositivos Android. Clique em "OK" para iniciar o download ou "Cancelar" para interromper.');
+            const userConfirmed = confirm('TargetDesigner funciona em Android e iOS. Clique em "OK" para acessar o site e veja como instalar logo abaixo ⬇️! ');
             if (userConfirmed) {
                 try {
                     const downloadRef = doc(db, "downloads", "count3");
@@ -622,6 +716,8 @@
                 console.log('Erro ao sair:', error.message);
             });
         });
+
+       
 
     </script>
 </body>

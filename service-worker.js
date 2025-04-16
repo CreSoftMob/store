@@ -4,7 +4,7 @@ const urlsToCache = [
   '/login2.html',
   '/cadastro.html',
   '/Home.html',
-  '/icons/1.jpeg',
+  '/icons/10.jpeg',
   '/manifest.json',
   '/offline.html', // Adicionando a página offline ao cache
 
