@@ -381,7 +381,7 @@
                             alt="SameNext"><b>SameNext</b></h3>
                     <p style="font-weight: bold;"><a>Rede Social</a></p>
                     <a href="https://cresoftmob.github.io/SN/" class="button-link"
-                        id="download-button2" download="SameNext.apk">
+                        id="download-button2"  download="SameNext.apk">
                         <button class="button">Instalar PWA</button>
                     </a>
 
@@ -602,7 +602,7 @@
         document.getElementById('download-button2').addEventListener('click', async function (e) {
             e.preventDefault();
 
-            const userConfirmed = confirm('Este APK é compatível apenas com dispositivos Android. Clique em "OK" para iniciar o download ou "Cancelar" para interromper.');
+            const userConfirmed = confirm('Se você sabe como instalar o PWA então acesse e instale, mas se não sabe consulte as instrusões abaixo...⬇️');
             if (userConfirmed) {
                 try {
                     const downloadRef = doc(db, "downloads", "count2");
@@ -653,7 +653,7 @@
         document.getElementById('download-button3').addEventListener('click', async function (e) {
             e.preventDefault();
 
-            const userConfirmed = confirm('TargetDesigner funciona em Android e iOS. Clique em "OK" para acessar o site e veja como instalar logo abaixo ⬇️! ');
+            const userConfirmed = confirm('Se você sabe como instalar o PWA então acesse e instale, mas se não sabe consulte as instrusões abaixo...⬇️! ');
             if (userConfirmed) {
                 try {
                     const downloadRef = doc(db, "downloads", "count3");
